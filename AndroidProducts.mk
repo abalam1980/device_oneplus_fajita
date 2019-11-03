@@ -16,3 +16,7 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/validus_fajita.mk
+
+COMMON_LUNCH_CHOICES := \
+    validus_fajita-userdebug 
+    
