@@ -28,12 +28,5 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 TARGET_KERNEL_CONFIG := enchilada_defconfig
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
-# Clang
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := 9.0.5
-KBUILD_COMPILER_STRING := Android (5696680 based on r353983e) clang version 9.0.5
-export KBUILD_COMPILER_STRING
-TARGET_KERNEL_HEADER_ARCH := arm64
-
 # inherit from the proprietary version
 -include vendor/oneplus/fajita/BoardConfigVendor.mk
