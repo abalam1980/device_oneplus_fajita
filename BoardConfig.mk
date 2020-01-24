@@ -24,6 +24,9 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
+# HIDL
+DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
+
 # Kernel
 TARGET_KERNEL_CONFIG := enchilada_defconfig
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
